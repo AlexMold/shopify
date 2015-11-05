@@ -1,0 +1,24 @@
+{
+  "name": "Fast-start",
+  "version": "0.1.0",
+  "homepage": "https://github.com/AlexMold/fast-start",
+  "authors": [
+    "AlexMold <mangol72@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "/"
+  ],
+  "dependencies": {
+    "jquery": "~1.9.1",
+    "minimal-bootstrap-grid": "latest"
+  },
+  "devDependencies": {
+    "fotorama": "~4.6.4"
+  }
+}

@@ -1,0 +1,611 @@
+@font-face {
+  font-family: 'uaweb';
+  src: url("../font/uaweb.eot?53749355");
+  src: url("../font/uaweb.eot?53749355#iefix") format("embedded-opentype"), url("../font/uaweb.woff?53749355") format("woff"), url("../font/uaweb.ttf?53749355") format("truetype"), url("../font/uaweb.svg?53749355#uaweb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.grid,
+.grid_desk_1,
+.grid_desk_2,
+.grid_desk_3,
+.grid_desk_4,
+.grid_desk_5,
+.grid_desk_6,
+.grid_desk_7,
+.grid_desk_8,
+.grid_desk_9,
+.grid_desk_10,
+.grid_desk_11,
+.grid_desk_12,
+.grid_tab_1,
+.grid_mob_1,
+.grid_tab_2,
+.grid_mob_2,
+.grid_tab_3,
+.grid_mob_3,
+.grid_tab_4,
+.grid_mob_4,
+.grid_tab_5,
+.grid_mob_5,
+.grid_tab_6,
+.grid_mob_6,
+.grid_tab_7,
+.grid_mob_7,
+.grid_tab_8,
+.grid_mob_8,
+.grid_tab_9,
+.grid_mob_9,
+.grid_tab_10,
+.grid_mob_10,
+.grid_tab_11,
+.grid_mob_11,
+.grid_tab_12,
+.grid_mob_12 {
+  display: inline-block;
+  float: left;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.grid:after,
+.grid_desk_1:after,
+.grid_desk_2:after,
+.grid_desk_3:after,
+.grid_desk_4:after,
+.grid_desk_5:after,
+.grid_desk_6:after,
+.grid_desk_7:after,
+.grid_desk_8:after,
+.grid_desk_9:after,
+.grid_desk_10:after,
+.grid_desk_11:after,
+.grid_desk_12:after,
+.grid_tab_1:after,
+.grid_mob_1:after,
+.grid_tab_2:after,
+.grid_mob_2:after,
+.grid_tab_3:after,
+.grid_mob_3:after,
+.grid_tab_4:after,
+.grid_mob_4:after,
+.grid_tab_5:after,
+.grid_mob_5:after,
+.grid_tab_6:after,
+.grid_mob_6:after,
+.grid_tab_7:after,
+.grid_mob_7:after,
+.grid_tab_8:after,
+.grid_mob_8:after,
+.grid_tab_9:after,
+.grid_mob_9:after,
+.grid_tab_10:after,
+.grid_mob_10:after,
+.grid_tab_11:after,
+.grid_mob_11:after,
+.grid_tab_12:after,
+.grid_mob_12:after,
+.grid:before,
+.grid_desk_1:before,
+.grid_desk_2:before,
+.grid_desk_3:before,
+.grid_desk_4:before,
+.grid_desk_5:before,
+.grid_desk_6:before,
+.grid_desk_7:before,
+.grid_desk_8:before,
+.grid_desk_9:before,
+.grid_desk_10:before,
+.grid_desk_11:before,
+.grid_desk_12:before,
+.grid_tab_1:before,
+.grid_mob_1:before,
+.grid_tab_2:before,
+.grid_mob_2:before,
+.grid_tab_3:before,
+.grid_mob_3:before,
+.grid_tab_4:before,
+.grid_mob_4:before,
+.grid_tab_5:before,
+.grid_mob_5:before,
+.grid_tab_6:before,
+.grid_mob_6:before,
+.grid_tab_7:before,
+.grid_mob_7:before,
+.grid_tab_8:before,
+.grid_mob_8:before,
+.grid_tab_9:before,
+.grid_mob_9:before,
+.grid_tab_10:before,
+.grid_mob_10:before,
+.grid_tab_11:before,
+.grid_mob_11:before,
+.grid_tab_12:before,
+.grid_mob_12:before {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+.grid_desk_1 {
+  min-height: 1px;
+  width: 8.33333%;
+}
+
+.offset_desk_1 {
+  margin-left: 8.33333%;
+}
+
+.grid_desk_2 {
+  min-height: 1px;
+  width: 16.66667%;
+}
+
+.offset_desk_2 {
+  margin-left: 16.66667%;
+}
+
+.grid_desk_3 {
+  min-height: 1px;
+  width: 25%;
+}
+
+.offset_desk_3 {
+  margin-left: 25%;
+}
+
+.grid_desk_4 {
+  min-height: 1px;
+  width: 33.33333%;
+}
+
+.offset_desk_4 {
+  margin-left: 33.33333%;
+}
+
+.grid_desk_5 {
+  min-height: 1px;
+  width: 41.66667%;
+}
+
+.offset_desk_5 {
+  margin-left: 41.66667%;
+}
+
+.grid_desk_6 {
+  min-height: 1px;
+  width: 50%;
+}
+
+.offset_desk_6 {
+  margin-left: 50%;
+}
+
+.grid_desk_7 {
+  min-height: 1px;
+  width: 58.33333%;
+}
+
+.offset_desk_7 {
+  margin-left: 58.33333%;
+}
+
+.grid_desk_8 {
+  min-height: 1px;
+  width: 66.66667%;
+}
+
+.offset_desk_8 {
+  margin-left: 66.66667%;
+}
+
+.grid_desk_9 {
+  min-height: 1px;
+  width: 75%;
+}
+
+.offset_desk_9 {
+  margin-left: 75%;
+}
+
+.grid_desk_10 {
+  min-height: 1px;
+  width: 83.33333%;
+}
+
+.offset_desk_10 {
+  margin-left: 83.33333%;
+}
+
+.grid_desk_11 {
+  min-height: 1px;
+  width: 91.66667%;
+}
+
+.offset_desk_11 {
+  margin-left: 91.66667%;
+}
+
+.grid_desk_12 {
+  min-height: 1px;
+  width: 100%;
+}
+
+.offset_desk_12 {
+  margin-left: 100%;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_1 {
+    min-height: 1px;
+    width: 8.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_1 {
+    min-height: 1px;
+    width: 8.33333%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_2 {
+    min-height: 1px;
+    width: 16.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_2 {
+    min-height: 1px;
+    width: 16.66667%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_3 {
+    min-height: 1px;
+    width: 25%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_3 {
+    min-height: 1px;
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_4 {
+    min-height: 1px;
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_4 {
+    min-height: 1px;
+    width: 33.33333%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_5 {
+    min-height: 1px;
+    width: 41.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_5 {
+    min-height: 1px;
+    width: 41.66667%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_6 {
+    min-height: 1px;
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_6 {
+    min-height: 1px;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_7 {
+    min-height: 1px;
+    width: 58.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_7 {
+    min-height: 1px;
+    width: 58.33333%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_8 {
+    min-height: 1px;
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_8 {
+    min-height: 1px;
+    width: 66.66667%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_9 {
+    min-height: 1px;
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_9 {
+    min-height: 1px;
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_10 {
+    min-height: 1px;
+    width: 83.33333%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_10 {
+    min-height: 1px;
+    width: 83.33333%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_11 {
+    min-height: 1px;
+    width: 91.66667%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_11 {
+    min-height: 1px;
+    width: 91.66667%;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 939px) {
+  .grid_tab_12 {
+    min-height: 1px;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .grid_mob_12 {
+    min-height: 1px;
+    width: 100%;
+  }
+}
+
+div {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1280px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.row:after,
+.row:before {
+  display: table;
+  content: " ";
+  clear: both;
+}
+
+/*# sourceMappingURL=../map/grid.css.map */
+@font-face {
+  font-family: 'uaweb';
+  src: url("../font/uaweb.eot?53749355");
+  src: url("../font/uaweb.eot?53749355#iefix") format("embedded-opentype"), url("../font/uaweb.woff?53749355") format("woff"), url("../font/uaweb.ttf?53749355") format("truetype"), url("../font/uaweb.svg?53749355#uaweb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=../map/icons.css.map */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*# sourceMappingURL=../map/reset.css.map */
+@font-face {
+  font-family: 'uaweb';
+  src: url("../font/uaweb.eot?53749355");
+  src: url("../font/uaweb.eot?53749355#iefix") format("embedded-opentype"), url("../font/uaweb.woff?53749355") format("woff"), url("../font/uaweb.ttf?53749355") format("truetype"), url("../font/uaweb.svg?53749355#uaweb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*# sourceMappingURL=../map/var.css.map */
+@font-face {
+  font-family: 'uaweb';
+  src: url("../font/uaweb.eot?53749355");
+  src: url("../font/uaweb.eot?53749355#iefix") format("embedded-opentype"), url("../font/uaweb.woff?53749355") format("woff"), url("../font/uaweb.ttf?53749355") format("truetype"), url("../font/uaweb.svg?53749355#uaweb") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background: #234;
+  font-size: 35px;
+  color: red;
+}
+
+.button {
+  height: 20px;
+  line-height: 20px;
+  width: 200px;
+  color: black;
+  font-family: "Brandon Grot W01 Black", san-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: white;
+}
+
+.button:active {
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+}
+
+/*# sourceMappingURL=../map/main.css.map */
