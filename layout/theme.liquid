@@ -1,14 +1,80 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset="utf-8">
-  {{ content_for_header }}
-  
-  {{ 'normalize.css' | asset_url | stylesheet_tag }}
-  {{ 'main.css' | asset_url | stylesheet_tag }}
-  <title>{{ page_title }} - {{ shop.name }}</title>
+	<meta charset="utf-8">
+	{{ content_for_header }}
+	
+	{{ 'normalize.css' | asset_url | stylesheet_tag }}
+	{{ 'main.css' | asset_url | stylesheet_tag }}
+	<title>{{ page_title }} - {{ shop.name }}</title>
 </head>
 <body>
-      {{ content_for_layout}}
+
+		<div class="main-wrapper">
+
+			<header role="header">
+				<div class="top-header">
+					<div class="container">
+						<div class="row">
+							<div class="logo">
+								<a href="/"><img src="{{shop.logo}}" height="320" width="429" alt=""></a>
+								<h1>so turn the lights out</h1>
+							</div>
+							<ul class="top-header__menu">
+							{% for link in linklists.main-menu.links %}
+								<li class="top-header__menu_item"><a href="{{ link.url }}">{{ link.title }}</a></li>
+							{% endfor %}
+								<li class="top-header__menu_item"><a href="#"><i>POS</i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="product-header">
+					<div class="container">
+						<div class="row">
+							<ul class="product-header__menu">
+								<li class="product-header__menu_item"><a href="#">Something</a></li>
+								<li class="product-header__menu_item"><a href="#">Something</a></li>
+								<li class="product-header__menu_item"><a href="#">Something</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<h2 class="slogan">{{shop.name}}</h2>
+							</div>
+							<div class="col-sm-8">
+								<ul class="social-media">
+									<li><a href="#"><i></i></a></li>
+									<li><a href="#"><i></i></a></li>
+									<li><a href="#"><i></i></a></li>
+									<li><a href="#"><i></i></a></li>
+								</ul>
+								<select name="" id="" class="currency-select">
+									<option value="">Dollar</option>
+									<option value="">Dollar</option>
+									<option value="">Dollar</option>
+									<option value="">Dollar</option>
+								</select>
+								<div class="search-form">
+									<form action=""><input type="search"><input type="submit"></form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			{{ content_for_layout}}
+
+			<!-- BEGIN FOOTER PART -->
+				<footer role="footer">
+					
+				</footer>
+				<!-- END FOOTER PART -->
+		</div>
 </body>
 </html>	

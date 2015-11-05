@@ -1,9 +1,6 @@
 @import 'var.scss';
 
 body{
-	background: #234;
-	font-size: 35px;
-	color: red;
 }
 .button{
 	@include button(20px, 200px, black);
