@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	{{ content_for_header }}
-	
+
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha256-k2/8zcNbxVIh5mnQ52A0r3a6jAgMGxFJFE2707UxGCk= sha512-ZV9KawG2Legkwp3nAlxLIVFudTauWuBpC10uEafMHYL0Sarrz5A7G79kXh5+5+woxQ5HM559XX2UZjMJ36Wplg==" crossorigin="anonymous">
 	{{ 'normalize.css' | asset_url | stylesheet_tag }}
 	{{ 'main.css' | asset_url | stylesheet_tag }}
 	<title>{{ page_title }} - {{ shop.name }}</title>
@@ -17,7 +18,7 @@
 					<div class="container">
 						<div class="row">
 							<div class="logo">
-								<a href="/"><img src="{{shop.logo}}" height="320" width="429" alt=""></a>
+								<a href="/">{{ 'logo.png' | asset_url | img_tag:'Logo' }}</a>
 								<h1>so turn the lights out</h1>
 							</div>
 							<ul class="top-header__menu">
@@ -48,11 +49,12 @@
 							</div>
 							<div class="col-sm-8">
 								<ul class="social-media">
-									<li><a href="#"><i></i></a></li>
-									<li><a href="#"><i></i></a></li>
-									<li><a href="#"><i></i></a></li>
-									<li><a href="#"><i></i></a></li>
+									<li><a href="#"><i class="fa fa-rss"></i></a></li>
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-skype"></i></a></li>
 								</ul>
+
 								<select name="" id="" class="currency-select">
 									<option value="">Dollar</option>
 									<option value="">Dollar</option>
@@ -60,7 +62,7 @@
 									<option value="">Dollar</option>
 								</select>
 								<div class="search-form">
-									<form action=""><input type="search"><input type="submit"></form>
+									<form action=""><input type="search"><input class="search-sumbit" type="submit" value="go"></form>
 								</div>
 							</div>
 						</div>
@@ -68,11 +70,57 @@
 				</div>
 			</header>
 
-			{{ content_for_layout}}
+			<div class="container">
+				{{ content_for_layout}}
+			</div>
 
 			<!-- BEGIN FOOTER PART -->
 				<footer role="footer">
-					
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-4">
+								<i class="fa"></i>
+								<h4 class="supfooter__head">Suspendisse sed</h4>
+								<p class="supfooter__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet odit cupiditate eos sed doloribus similique, debitis mollitia! Quaerat officiis, ipsum.</p>
+							</div>
+							<div class="col-sm-4">
+								<i class="fa"></i>
+								<h4 class="supfooter__head">Suspendisse sed</h4>
+								<p class="supfooter__text">Accusamus officia explicabo quo id veniam! Ex tenetur inventore temporibus alias, ratione, reiciendis explicabo, odio quaerat nulla accusamus minima adipisci.</p>
+							</div>
+							<div class="col-sm-4">
+								<i class="fa"></i>
+								<h4 class="supfooter__head">Suspendisse sed</h4>
+								<p class="supfooter__text">Rem ducimus officia laudantium cupiditate libero corporis perferendis porro id error obcaecati nisi, nulla maxime quibusdam modi, consequuntur et nesciunt.</p>
+							</div>
+						</div><br>
+						<div class="row">
+							<div class="col-sm-3">
+								<h4>Information</h4>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, aperiam.</p>
+							</div>
+							<div class="col-sm-3">
+								<h4>Information</h4>
+								<ul class="footer__manu">
+									{% for link in linklists.footer.links %}
+									<li class="footer__menu_item"><a href="{{ link.url }}">{{link.title}}</a></li>
+									{% endfor %}
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<h4>Information</h4>
+								<ul class="footer__manu">
+									<li class="footer__menu_item"><a href="#"></a></li>
+								</ul>
+							</div>
+							<div class="col-sm-3">
+								<h4>Information</h4>
+								<ul class="footer__manu">
+									<li class="footer__menu_item"><a href="#"></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
 				</footer>
 				<!-- END FOOTER PART -->
 		</div>
